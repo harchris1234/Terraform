@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f0f0f;
+            color: #ffffff;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #1a1a1a;
+            position: sticky;
+            top: 0;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00d4ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            text-align: center;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #aaaaaa;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .hero button {
+            padding: 15px 40px;
+            background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .hero button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Cards Section */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 50px;
+            flex-wrap: wrap;
+            background: #111111;
+        }
+
+        .card {
+            background: #1a1a1a;
+            border-radius: 15px;
+            padding: 30px;
+            width: 250px;
+            text-align: center;
+            border: 1px solid #2a2a2a;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #00d4ff;
+        }
+
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #aaaaaa;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #1a1a1a;
+            color: #555555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">MyBrand</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to MyBrand</h1>
+        <p>We build modern, fast, and beautiful web experiences for everyone.</p>
+        <button onclick="alert('Thanks for clicking!')">Get Started</button>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards" id="services">
+        <div class="card">
+            <div class="icon">🚀</div>
+            <h3>Fast</h3>
+            <p>Optimized for speed and performance across all devices.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🎨
